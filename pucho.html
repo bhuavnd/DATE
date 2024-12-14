@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+         body {
+            background-color: rgb(180, 121, 155);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0; 
+        }
+        .shywala{
+            border-radius: 20px;
+            margin-top: 0px;    
+        }
+    </style>
+</head>
+<body>
+    <p class="shy-txt1">Woh na mujhe kuch puchna tha &#x1F449; &#x1F448;</p>
+    <div class="shy-con">
+    <a href="/movie.html"><h2 class="shy-txt2">haan haan bolo....&#x1F601;</h2></a>
+    <img src="https://media.giphy.com/media/OpfkuToK5gSHK/giphy.gif" alt="shywala" class="shywala">
+    <h2 class="shy-txt3">Nah mat bolo....&#x1F624;  </h2>
+</div>
+</body>
+<script>
+    const shyTxt3 = document.querySelector('.shy-txt3');
+
+shyTxt3.addEventListener('click', () => {
+    shyTxt3.classList.toggle('moved'); 
+});
+</script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(158, 91, 158);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0;  
+            transition: background-color 1s;
+        }
+        .main-txt{
+            display: flex;
+        }
+        .txt1{
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+        }
+        .txt2{
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+        }
+        .txt3{
+            font-size: 30px;
+        }
+        .heart {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0;
+            animation: heart 4s forwards;
+        }
+        @keyframes heart {
+            0% {
+                font-size: 0;
+            }
+            100% {
+                font-size: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="txt3">LOVE YOU BABY...❣</p>
+    <div class="main-txt">
+        <span class="txt1" onclick="showHeart()">Love you too bbe..😘</span>
+        <img src="https://media.giphy.com/media/WnfGPMA7rQDm8lhA5f/giphy.gif" />
+        <span class="txt2" onclick="showHeart()">salanghaeyo😘</span>
+    </div>
+    <span class="heart" style="display: none;">bye❤️bbe</span>
+
+    <script>
+        function showHeart() {
+            var heart = document.querySelector('.heart');
+            heart.style.display = 'block';
+            setTimeout(function() {
+                heart.style.display = 'none';
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

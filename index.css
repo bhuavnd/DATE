@@ -1,0 +1,46 @@
+.flexing{
+    display: flex
+    ;
+}
+.txt2{
+    margin-right: 10px;
+    color:rgb(0, 0, 0);
+}
+.txt1{
+    margin-left: 10px;
+    color: rgb(40, 37, 39);
+}
+.shy-txt1{
+    font-size: 35px;
+    margin-left: 10px;
+}
+.shy-con{
+    display:flex;
+    justify-content: space-between 50px;
+}
+.shy-txt2{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: -50px;
+    color: rgb(76, 3, 52);
+}
+.shy-txt3{
+    font-size: 25px;
+    margin-left: 15px;
+    color:rgb(76, 3, 52)
+}
+.shy-txt3 {
+    display: inline-block;
+    transition: transform 0.6s ease; /* Smooth transition for the transform */
+}
+.shy-txt3:hover {
+    transform: translateY(-300px); /* Move the text up by 10 pixels on hover */
+}
+
+.movie-txt{
+    display: flex;
+    font-size: 15px;
+}
+.main-txt{
+    display: flex;
+}
